@@ -1,0 +1,29 @@
+{
+  "name": "jest-enzyme-demo",
+  "version": "1.0.0",
+  "author": "Lucas Chen",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "~7.8.3",
+    "@babel/preset-react": "~7.8.3",
+    "parcel-bundler": "~1.12.4"
+  },
+  "scripts": {
+    "test": "jest",
+    "watch": "parcel src/index.html"
+  },
+  "dependencies": {
+    "@babel/preset-env": "~7.8.3",
+    "axios": "~0.19.2",
+    "babel-polyfill": "~6.26.0",
+    "polished": "~3.4.2",
+    "react": "~16.8.0",
+    "react-dom": "~16.8.0",
+    "react-hook-form": "~4.6.2",
+    "styled-components": "~5.0.0"
+  },
+  "alias": {
+    "#root": "./src"
+  }
+}
