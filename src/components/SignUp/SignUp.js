@@ -12,20 +12,16 @@ const Wrapper = styled.div`
   width: 30rem;
 `;
 
-const SignUp = () => {
-  const [signUpComplete, setSignUpComplete] = useState(false);
+export const SignUpSwitcher = ({ Completed, Incomplete }) => {
+  const [isCompleted, setIsCompleted] = useState(false);
 
+  return isCompleted ? <Completed /> : <Incomplete onComplete={() => setIsCompleted(true)} />;
+};
+
+const SignUp = () => {
   return (
     <Wrapper>
-      {signUpComplete ? (
-        <Completed />
-      ) : (
-        <Form
-          onSignUp={() => {
-            setSignUpComplete(true);
-          }}
-        />
-      )}
+      <SignUpSwitcher Completed={Completed} Incomplete={Form} />
     </Wrapper>
   );
 };

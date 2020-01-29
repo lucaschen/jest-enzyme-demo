@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<ForwardRef>
+  <styled.div>
+    <div
+      className="sc-AykKE cbnKn"
+    >
+      <styled.select
+        disabled={false}
+        name="plan"
+      >
+        <select
+          className="sc-AykKD ergItk"
+          disabled={false}
+          name="plan"
+        >
+          <option
+            value=""
+          >
+            (choose one)
+          </option>
+          <option
+            key="1"
+            value={1}
+          >
+            Test Author 1
+          </option>
+          <option
+            key="2"
+            value={2}
+          >
+            Test Author 2
+          </option>
+        </select>
+      </styled.select>
+      <styled.div>
+        <div
+          className="sc-AykKC ddncdg"
+        />
+      </styled.div>
+    </div>
+  </styled.div>
+</ForwardRef>
+`;

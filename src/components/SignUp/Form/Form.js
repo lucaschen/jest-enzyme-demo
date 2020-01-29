@@ -73,7 +73,7 @@ const LabelText = styled.span`
   margin: 0 0 0.5rem;
 `;
 
-const Form = ({ onSignUp: pushSignUp }) => {
+const Form = ({ onComplete: pushComplete }) => {
   const {
     formState: { isSubmitting, isValid },
     handleSubmit,
@@ -82,7 +82,7 @@ const Form = ({ onSignUp: pushSignUp }) => {
 
   const onSubmit = async ({ email, favouriteAuthor, fullName }) => {
     await signUp({ email, favouriteAuthor, fullName });
-    pushSignUp();
+    pushComplete();
   };
 
   return (
